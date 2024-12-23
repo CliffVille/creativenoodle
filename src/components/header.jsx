@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,31 +8,29 @@ const Header = () => {
   return (
     <div className="bg-transparent text-black">
         <div className="container mx-auto px-4 flex justify-around items-center h-16">
-            <a href="#home" className="text-2xl font-bold">creativenoodle.</a>
+            <Link to="/Home" className="text-2xl font-bold">creativenoodle.</Link>
            
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-4">
-                {['Home', 'About', 'Services', 'Contacts'].map((tab) => (
-                    <div key={tab} className="flex flex-col items-center font-bold justify-center">
-                   <a
-                        key={tab}
-                        href={`#${tab.toLowerCase()}`}
-                        onClick={() => setActiveTab(tab)}
-                        className={`py-2 px-4 rounded-md border-b-2 border-transparent transition-all duration-300 ${
-                        activeTab === tab
-                        ? 'text-black border-transparent bg-yellow'
-                        : 'hover:bg-yellow hover:text-black'
-                        }`}
-                        >
-                        {tab}
-                    </a>
-                    {activeTab === tab && (
-                        <div className="w-3 h-3 bg-yellow rounded-full mt-1"></div>
-                    )}
-                 </div>
-                ))}
-            </div>
-
+                    {['Home', 'About', 'Services', 'Contacts'].map((tab) => (
+                        <div key={tab} className="flex flex-col items-center font-bold justify-center">
+                            <NavLink
+                                to={`/${tab.toLowerCase()}`} // React Router link
+                                onClick={() => setActiveTab(tab)}
+                                className={({ isActive }) =>
+                                    `py-2 px-4 rounded-md border-b-2 border-transparent transition-all duration-300 ${
+                                        isActive ? 'text-black border-transparent bg-yellow' : 'hover:bg-yellow hover:text-black'
+                                    }`
+                                }
+                            >
+                                {tab}
+                            </NavLink>
+                            {activeTab === tab && (
+                                <div className="w-3 h-3 bg-yellow rounded-full mt-1"></div>
+                            )}
+                        </div>
+                    ))}
+                </div>
 
             {/* Hamburger button */}
             
@@ -49,21 +48,21 @@ const Header = () => {
                 {isOpen && (
                     <div className="md:hidden bg-white">
                         {['Home', 'About', 'Services', 'Contacts'].map((tab) => (
-                        <a
+                        <NavLink
                             key={tab}
-                            href={`#${tab.toLowerCase()}`}
+                            to={`/${tab.toLowerCase()}`}
                             onClick={() => {
                             setActiveTab(tab);
                             setIsOpen(false);
                             }}
-                            className={`block py-2 px-4 w-[80px] rounded-md hover:text-black hover:bg-yellow ${
-                            activeTab === tab
-                            ? 'text-black font-bold bg-yellow-400'
-                            : ''
-                            }`}
-                            >
-                            {tab}
-                        </a>
+                            className={({ isActive }) =>
+                                `block py-2 px-4 w-[80px] rounded-md hover:text-black hover:bg-yellow ${
+                            isActive ? 'text-black font-bold bg-yellow-400' : ''
+                            }`
+                        }
+                    >
+                        {tab}
+                        </NavLink>
                       ))}
                </div>  
             )}   
