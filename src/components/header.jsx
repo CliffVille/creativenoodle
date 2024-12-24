@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
@@ -7,11 +7,11 @@ const Header = () => {
 
   return (
     <div className="bg-transparent text-black">
-        <div className="container mx-auto px-4 flex justify-around items-center h-16">
+        <div className=" px-4 flex justify-around items-center h-16">
             <Link to="/Home" className="text-2xl font-bold">creativenoodle.</Link>
            
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-4">
+            <div className="hidden lg:flex space-x-4">
                     {['Home', 'About', 'Services', 'Contacts'].map((tab) => (
                         <div key={tab} className="flex flex-col items-center font-bold justify-center">
                             <NavLink
@@ -35,7 +35,7 @@ const Header = () => {
             {/* Hamburger button */}
             
             <div
-                className="md:hidden flex flex-col justify-between h-6 w-8 cursor-pointer mt-1" 
+                className="lg:hidden flex flex-col justify-between h-6 w-8 cursor-pointer mt-1" 
                 onClick={() => setIsOpen(!isOpen)}>
 
                 <span className={`block h-1 bg-black transition-transform ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
@@ -46,7 +46,7 @@ const Header = () => {
 
             {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="md:hidden bg-white">
+                    <div className="lg:hidden bg-white">
                         {['Home', 'About', 'Services', 'Contacts'].map((tab) => (
                         <NavLink
                             key={tab}
