@@ -18,6 +18,9 @@ export default {
       colors: {
         yellow: '#FFD151',
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],
