@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <div className="bg-transparent text-black">
-        <div className=" px-4 flex justify-around items-center h-16">
+        <div className="px-4 flex justify-around items-center h-16">
             <Link to="/Home" className="text-2xl font-bold">creativenoodle.</Link>
            
             {/* Desktop Menu */}
@@ -46,7 +46,7 @@ const Header = () => {
 
             {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="lg:hidden bg-white">
+                    <div className="lg:hidden bg-yellow w-3/5 mx-auto rounded-lg">
                         {['Home', 'About', 'Services', 'Contacts'].map((tab) => (
                         <NavLink
                             key={tab}
@@ -56,7 +56,7 @@ const Header = () => {
                             setIsOpen(false);
                             }}
                             className={({ isActive }) =>
-                                `block py-2 px-4 w-[80px] rounded-md hover:text-black hover:bg-yellow ${
+                                `block py-2 px-4 text-center rounded-lg justify-center items-center hover:text-black hover:bg-hover w-1/5 mx-auto ${
                             isActive ? 'text-black font-bold bg-yellow-400' : ''
                             }`
                         }

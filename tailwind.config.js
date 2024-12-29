@@ -17,6 +17,7 @@ export default {
       },
       colors: {
         yellow: '#FFD151',
+        hover: '#FF9F1C', 
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
