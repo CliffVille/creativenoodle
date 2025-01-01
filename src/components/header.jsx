@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <div className="bg-transparent text-black">
-        <div className="px-4 flex justify-around items-center h-16">
+        <div className="px-4 max-w-7xl mx-auto flex justify-between items-center h-16">
             <Link to="/Home" className="text-2xl font-bold">creativenoodle.</Link>
            
             {/* Desktop Menu */}

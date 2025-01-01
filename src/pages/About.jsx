@@ -11,7 +11,7 @@ const About = () => {
             </p>
           </div>
           <div className="flex flex-col min-h-[500px]">
-            <div className="flex flex-row mt-8">
+            <div className="flex flex-row gap-10 mt-8">
               <div className="flex flex-col items-center">
                 <div className="w-[407px] h-[407px] rounded-full bg-yellow mb-4"></div>
                 <h1 className="text-xl lg:text-3xl text-black mb-4">Alex</h1>
@@ -48,21 +48,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex flex-col items-center">
-              <h1 className="text-xl lg:text-3xl text-black mb-4 mt-4 uppercase">our skills</h1>
-              <div className="flex flex-row gap-4">
-                <div className="flex flex-col">
-                  <div className="w-[150px] border-black border-2 rounded-full"></div>
-                  <div className="w-[150px] border-black border-2 rounded-full"></div>
-                  <div className="w-[150px] border-black border-2 rounded-full"></div>
-                  <div className="w-[150px] border-black border-2 rounded-full"></div>
-                  <div className="w-[150px] border-black border-2 rounded-full"></div>
-                  <div className="w-[150px] border-black border-2 rounded-full"></div>
-                  <div className="w-[150px] border-black border-2 rounded-full"></div>
-                  <div className="w-[150px] border-black border-2 rounded-full"></div>
-                </div>
-              </div>
-          </div> */}
       </div>
     )
   }
