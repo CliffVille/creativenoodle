@@ -34,7 +34,7 @@ const Home = () => {
         </div>
       </div>
 
-      <button className="w-[120px] px-2 py-3 rounded-full bg-yellow flex items-center justify-center mx-auto font-bold mt-12 hover:scale-[1.1]">Let&apos;s Chat{" "} <span className="animate-pulse-scale text-xs ml-2"><FaArrowRight /></span></button>
+      <button className="w-[120px] px-2 py-3 rounded-full bg-yellow flex items-center justify-center mx-auto font-bold mt-12 hover:scale-[1.1] mb-12">Let&apos;s Chat{" "} <span className="animate-pulse-scale text-xs ml-2"><FaArrowRight /></span></button>
     </div>
   )
 }
