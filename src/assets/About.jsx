@@ -1,9 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaWordpress, FaPhp  } from "react-icons/fa";
 import { SiJavascript, SiNextdotjs, SiFigma, SiCanva, SiWebflow,  SiAdobephotoshop, SiAdobepremierepro } from "react-icons/si";
-import cribCleaner from "../assets/cribcleaners.png";
-import rebel from "../assets/rebel.png";
-import nsc from "../assets/nsc.png";
-import duckHunt from "../assets/duckhunt.png";
+import { motion } from "framer-motion";
 
 const About = () => {
 
@@ -40,15 +37,12 @@ const About = () => {
 
   return (
     <div className="flex flex-col min-h-screen font-montserrat font-extrabold mt-12">
-
       <div className="max-w-7xl mx-auto px-4">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="head justify-start">
-            <h1 className="text-4xl lg:text-6xl text-black uppercase w-1/2 md:w-2/4 lg:w-1/3 mb-4">Meet the team</h1>
-            <p className="text-lg lg:text-xl flex flex-wrap gap-1 text-black ml-2">Learn about our 
-              <span className="text-lg lg:text-xl text-yellow">team</span> and why we do this.
-            </p>
-          </div>
+        <div className="head justify-start">
+          <h1 className="text-4xl lg:text-6xl text-black uppercase w-1/2 md:w-2/4 lg:w-1/3 mb-4">Meet the team</h1>
+          <p className="text-lg lg:text-xl flex flex-wrap gap-1 text-black ml-2">Learn about our 
+            <span className="text-lg lg:text-xl text-yellow">team</span> and why we do this.
+          </p>
         </div>
         <div className="flex flex-col min-h-[500px]">
             <div className="flex flex-row gap-10 mt-8">
@@ -74,7 +68,7 @@ const About = () => {
               <div className="flex-1">
                 <div className="text-black grid grid-cols-1 gap-4 my-8 uppercase">
                   <h1 className="text-xl lg:text-3xl text-black uppercase text-left">our journey</h1>
-                  <div class="relative flex items-center justify-between w-full max-w-7xl mx-auto my-10">
+                  <div class="relative flex items-center justify-between w-full max-w-7xl mx-auto my-40">
                     <div class="absolute top-2/5 left-0 w-full h-2 bg-gray-300 -translate-y-1/2"></div>
                     <div class="flex flex-col items-center z-10">
                       <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
@@ -97,11 +91,12 @@ const About = () => {
                       <p class="mt-2 text-sm text-center text-black"></p>
                     </div>
                   </div>
+
                 </div>
               </div>
               <div className="flex flex-col">
                 <div className="flex-1">
-                  <h1 className="text-xl text-left lg:text-3xl text-black uppercase">Our Skills</h1>
+                  <h1 className="text-xl text-left lg:text-3xl text-black my-8 uppercase">Our Skills</h1>
                   <div className="grid grid-cols-6 gap-4 justify-center items-center mb-8">
                     <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">HTML<FaHtml5 className="text-orange-500 text-5xl" /></span>
                     <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">CSS<FaCss3Alt className="text-blue-600 text-5xl" /></span>
@@ -122,53 +117,72 @@ const About = () => {
           </div>
       </div>
 
-      <section className="text-white px-5 py-16 max-w-7xl mx-auto" id="projects">
-        <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
-          <div className="about-info mb-5">
-            <h2 className="text-4xl font-bold mb-10 border-b-[5px] w-[180px] mx-auto md:mx-0 border-accent pb-6 text-black">Projects</h2>
-            <p className="mb-8 text-black">
-              These are some of my projects. I have built these with React, Masonry.js, vanilla JavaScript, 
-              Tailwind CSS, and vanilla CSS. Check them out.
+      <section className="text-white px-5 py-32" id="projects">
+      <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
+        <div className="about-info mb-5">
+          <motion.div 
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount : 0.3 }}
+            >
+              <h2 className="text-4xl font-bold mb-10 border-b-[5px] w-[180px] mx-auto md:mx-0 border-accent pb-6">
+                Projects
+              </h2>
+          </motion.div>
+          <motion.div 
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount : 0.3 }}
+            >
+            <p className="mb-8">
+              These are some of my projects. I have built these with React,
+              Masonary.js and vanilla JavaScript, Tailwindcss, and vanilla CSS. Check them out.
             </p>
-          </div>
+          </motion.div>
         </div>
 
+        <div className="about-img"></div>
+      </div>
 
-        <div className="projects container mx-auto grid md:grid-cols-2 gap-12">
-          {projects.map((project, i) => {
-            return (
-              <div 
-                key={i} 
-                className="group relative border-[6px] border-accent overflow-hidden"
-              >
-                <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
+      <div className="projects container mx-auto grid md:grid-cols-2 gap-12">
+        {projects.map((project, i) => {
+          return (
+            <motion.div 
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: false, amount : 0.3 }}
+            >
+            <div className="relative border-[6px] border-accent" key={i}>
+              <img src={project.img} alt={project.title} />
+              <div className="flex absolute left-0 right-0 top-0 bottom-0 mx-auto w-[100%] h-[100%] m:h-[50%] bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-100">
+                <p className="py-3 text-center font-bold px-2 text-white text-[10px] md:text-xl">
+                  {project.desc}
+                </p>
 
-                <div className="absolute inset-0 flex flex-col justify-center items-center bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <p className="py-3 text-center font-bold px-2 text-white text-[10px] md:text-xl">
-                    {project.desc}
-                  </p>
-
-                    <div className="flex gap-4">
-                      <a
-                        href={project.live}
-                        className="px-4 py-1 bg-blue-500 hover:bg-blue-600 font-bold uppercase"
-                      >
-                        Live
-                      </a>
-                      <a
-                        href={project.code}
-                        className="px-4 py-1 bg-blue-500 hover:bg-blue-600 font-bold uppercase"
-                      >
-                        Code
-                      </a>
-                    </div>
+                <div className="mx-auto">
+                  <a
+                    href={project.live}
+                    className="px-4 py-1 bg-blue-500 hover:bg-blue-600 font-bold text-transform: uppercase"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href={project.code}
+                    className="px-4 py-1 bg-blue-500 hover:bg-blue-600 font-bold text-transform: uppercase ml-2"
+                  >
+                    Code
+                  </a>
                 </div>
               </div>
-            );
-          })}
-        </div>
-      </section>
-
+            </div>
+            </motion.div>
+          );
+        })}
+      </div>
+    </section>
 
       <div className="w-full h-[362px] bg-[#eeeeee] text-center">
         <h1 className="text-black text-4xl w-1/2 mx-auto mt-24 mb-8 uppercase">Let&apos;s build your dreams today!</h1>
