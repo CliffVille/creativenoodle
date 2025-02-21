@@ -30,10 +30,10 @@ const About = () => {
                   <p className="text-[10px] lg:text-[12px] text-black w-full">Cliff is a creative individual with a passion for coding, which he self-taught before honing his skills in school. Coding allows him to create dreams, transforming ideas into reality through  solutions. Outside of coding, Cliff enjoys exploring design, he loves to play with his roommate’s dog! He enjoys learning further about coding and always improving his skills.</p>
                 </div>
               </div>
-              <div className="flex flex-row">
+              <div className="flex flex-col">
                 <div className="flex-1">
                   <div className="text-black grid grid-cols-1 gap-4 my-12 uppercase">
-                    <h1 className="text-xl lg:text-3xl text-black uppercase">our journey</h1>
+                    <h1 className="text-xl lg:text-3xl text-center text-black uppercase">our journey</h1>
                     <div class="relative flex items-center justify-between w-3/4 max-w-4xl my-40">
                       <div class="absolute top-2/5 left-0 w-full h-2 bg-gray-300 -translate-y-1/2"></div>
                       <div class="flex flex-col items-center z-10">
