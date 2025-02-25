@@ -40,12 +40,12 @@ const Services = () => {
   return (
     <div className="flex flex-col min-h-screen font-montserrat mt-12">
 
-      <div className="flex flex-col justify-start items-start ml-44">
+      <div className="flex flex-col justify-start items-start ml-48">
         <h1 className="text-4xl text-bold font-extrabold uppercase">Services</h1>
         <p className="w-1/3 text-xl">Browse our solutions to see what we can offer to you and your business or company!</p>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-[78%] mx-auto min-h-[500px]">
+      <div className="flex flex-col justify-center items-center w-[74%] mx-auto min-h-[500px]">
         <div className="flex flex-row gap-10 mt-8">
           <div className="flex flex-col items-center text-center">
             <div className="w-full h-[207px] flex flex-col justify-center items-center rounded-[40px] bg-yellow mb-4">
@@ -69,7 +69,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row w-[78%] mx-auto justify-center items-center mb-16">
+      <div className="flex flex-row w-[74%] mx-auto justify-center items-center mb-16">
         <div className="flex flex-col justify-start items-start w-3/4">
           <h1 className="text-4xl text-bold font-extrabold uppercase mb-8">Our Approach</h1>
             <div  className="flex flex-row justify-center items-center gap-16">
@@ -87,7 +87,7 @@ const Services = () => {
         </div>
         <div className="w-1/4 h-[207px] rounded-lg bg-yellow mt-16"></div>
       </div>
-      <section className="text-white px-5 py-16 max-w-7xl mx-auto" id="projects">
+      <section className="text-white px-5 py-16 max-w-6xl mx-auto" id="projects">
         <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
           <div className="about-info mb-5">
             <h2 className="text-4xl font-bold mb-10 border-b-[5px] w-[180px] mx-auto md:mx-0 border-accent pb-6 text-black">Projects</h2>

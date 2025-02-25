@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="flex flex-col font-extrabold font-montserrat mt-12">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-around mx-auto w-[85%]">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-around mx-auto w-[74%]">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left mb-8 lg:mb-0">
           <h1 className="w-1/2 text-4xl lg:text-6xl font-bold text-black leading-tight uppercase mb-4">We&apos;re creative noodle</h1>
           <p className="text-xl lg:text-2xl flex flex-wrap gap-1 text-black">We{" "} 

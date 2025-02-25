@@ -41,8 +41,8 @@ const About = () => {
   return (
     <div className="flex flex-col min-h-screen font-montserrat font-extrabold mt-12">
 
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="head justify-start">
             <h1 className="text-4xl lg:text-6xl text-black uppercase w-1/2 md:w-2/4 lg:w-1/3 mb-4">Meet the team</h1>
             <p className="text-lg lg:text-xl flex flex-wrap gap-1 text-black ml-2">Learn about our 
@@ -122,7 +122,7 @@ const About = () => {
           </div>
       </div>
 
-      <section className="text-white px-5 py-16 max-w-7xl mx-auto" id="projects">
+      <section className="text-white px-5 py-16 max-w-6xl mx-auto" id="projects">
         <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
           <div className="about-info mb-5">
             <h2 className="text-4xl font-bold mb-10 border-b-[5px] w-[180px] mx-auto md:mx-0 border-accent pb-6 text-black">Projects</h2>
