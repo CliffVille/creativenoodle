@@ -23,7 +23,7 @@ const Contacts = () => {
 
   return (
 
-    <div className="flex flex-col min-h-screen font-montserrat w-[74%] mx-auto mt-12">
+    <div className="flex flex-col min-h-screen font-montserrat w-[74%] mx-auto mt-44">
 
       <div className="flex flex-col justify-start items-start mb-8">
         <h1 className="text-4xl text-bold font-extrabold uppercase">send a dm</h1>
