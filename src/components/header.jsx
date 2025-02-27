@@ -46,7 +46,7 @@ const Header = () => {
 
             {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="lg:hidden bg-yellow w-3/5 mx-auto rounded-lg">
+                    <div className="lg:hidden bg-yellow w-full mx-auto rounded-lg">
                         {['Home', 'About', 'Services', 'Contacts'].map((tab) => (
                         <NavLink
                             key={tab}
