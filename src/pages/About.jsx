@@ -43,37 +43,37 @@ const About = () => {
 
       <div className="max-w-6xl mx-auto px-4">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="head justify-start">
-            <h1 className="text-4xl lg:text-6xl text-black uppercase w-1/2 md:w-2/4 lg:w-1/3 mb-4">Meet the team</h1>
-            <p className="text-lg lg:text-xl flex flex-wrap gap-1 text-black ml-2">Learn about our 
-              <span className="text-lg lg:text-xl text-yellow">team</span> and why we do this.
+          <div className="head justify-center md:justify-startx">
+            <h1 className="text-4xl lg:text-6xl text-black text-center md:text-left uppercase w-full md:w-2/4 lg:w-1/3 mb-4">Meet the team</h1>
+            <p className="text-lg lg:text-xl flex flex-wrap text-center md:text-left gap-1 text-black ml-2">Learn about our 
+              <span className="text-lg lg:text-xl text-center md:text-left text-yellow">team</span> and why we do this.
             </p>
           </div>
         </div>
         <div className="flex flex-col min-h-[500px]">
-            <div className="flex flex-row gap-10 mt-8">
+            <div className="flex flex-col md:flex-row gap-10 mt-8">
               <div className="flex flex-col items-center">
-                <div className="w-full h-[307px] rounded-[40px] bg-yellow mb-4"></div>
-                <h1 className="text-xl lg:text-4xl text-black mb-4">Alex</h1>
-                <p className="text-[10px] lg:text-[12px] text-black w-full">Alexander is a creative individual passionate about design, which allows him to express himself and transform ideas into meaningful visuals. Beyond designing, he enjoys playing basketball and badminton, which enhances his teamwork and competitive spirit. He thrives on blending functionality with creativity and is always eager to explore new possibilities in his projects.</p>
+                <div className="w-3/4 md:w-full h-[207px] md:h-[307px] rounded-[40px] bg-yellow mb-4"></div>
+                <h1 className="text-4xl text-black mb-4">Alex</h1>
+                <p className="text-[12px] text-center md:text-left text-black w-3/4 md:w-full">Alexander is a creative individual passionate about design, which allows him to express himself and transform ideas into meaningful visuals. Beyond designing, he enjoys playing basketball and badminton, which enhances his teamwork and competitive spirit. He thrives on blending functionality with creativity and is always eager to explore new possibilities in his projects.</p>
               </div>
               
               <div className="flex flex-col items-center">
-                <div className="w-full h-[307px] rounded-[40px] bg-yellow mb-4"></div>
-                <h1 className="text-xl lg:text-4xl text-black mb-4">Benny</h1>
-                <p className="text-[10px] lg:text-[12px] text-black w-full">Benny is a creative individual with a passion for design, developed through school as a way to express ideas and craft meaningful visuals. Outside of designing, Benny enjoys gaming and watching movies, which fuel creativity and inspire new perspectives. Combining functionality with creativity, Benny thrives on exploring innovative possibilities in every project.</p>
+                <div className="w-3/4 md:w-full h-[207px] md:h-[307px] rounded-[40px] bg-yellow mb-4"></div>
+                <h1 className="text-4xl text-black mb-4">Benny</h1>
+                <p className="text-[12px] text-center md:text-left text-black w-3/4 md:w-full">Benny is a creative individual with a passion for design, developed through school as a way to express ideas and craft meaningful visuals. Outside of designing, Benny enjoys gaming and watching movies, which fuel creativity and inspire new perspectives. Combining functionality with creativity, Benny thrives on exploring innovative possibilities in every project.</p>
               </div>
 
               <div className="flex flex-col items-center mb-4">
-                <div className="w-full h-[307px] rounded-[40px] bg-yellow mb-4"></div>
-                <h1 className="text-xl lg:text-4xl text-black mb-4">Cliff</h1>
-                <p className="text-[10px] lg:text-[12px] text-black w-full">Cliff is a creative individual with a passion for coding, which he self-taught before honing his skills in school. Coding allows him to create dreams, transforming ideas into reality through  solutions. Outside of coding, Cliff enjoys exploring design, he loves to play with his roommate’s dog! He enjoys learning further about coding and always improving his skills.</p>
+                <div className="w-3/4 md:w-full h-[207px] md:h-[307px] rounded-[40px] bg-yellow mb-4"></div>
+                <h1 className="text-4xl text-black mb-4">Cliff</h1>
+                <p className="text-[12px] text-center md:text-left text-black w-3/4 md:w-full">Cliff is a creative individual with a passion for coding, which he self-taught before honing his skills in school. Coding allows him to create dreams, transforming ideas into reality through  solutions. Outside of coding, Cliff enjoys exploring design, he loves to play with his roommate’s dog! He enjoys learning further about coding and always improving his skills.</p>
               </div>
             </div>
             <div className="flex flex-col">
               <div className="flex-1">
                 <div className="text-black grid grid-cols-1 gap-4 my-8 uppercase">
-                  <h1 className="text-xl lg:text-3xl text-black uppercase text-left">our journey</h1>
+                  <h1 className="text-xl lg:text-3xl text-black uppercase text-center md:text-left">our journey</h1>
                   <div class="relative flex items-center justify-between w-full max-w-7xl mx-auto my-10">
                     <div class="absolute top-2/5 left-0 w-full h-2 bg-gray-300 -translate-y-1/2"></div>
                     <div class="flex flex-col items-center z-10">
@@ -103,18 +103,18 @@ const About = () => {
                 <div className="flex-1">
                   <h1 className="text-xl text-left lg:text-3xl text-black uppercase">Our Skills</h1>
                   <div className="grid grid-cols-6 gap-4 justify-center items-center mb-8">
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">HTML<FaHtml5 className="text-orange-500 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">CSS<FaCss3Alt className="text-blue-600 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">JavaScript<SiJavascript className="text-yellow-400 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">React<FaReact className="text-blue-400 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Next.JS<SiNextdotjs className="text-black text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">PHP<FaPhp className="text-indigo-500 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Photoshop<SiAdobephotoshop className="text-blue-500 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Premiere Pro<SiAdobepremierepro className="text-indigo-500 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Canva<SiCanva className="text-blue-300 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Figma<SiFigma className="text-black text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">WordPress<FaWordpress className="text-blue-800 text-5xl" /></span>
-                    <span className="text-xl flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">WebFlow<SiWebflow className="text-blue-500 text-5xl" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">HTML<FaHtml5 className="text-orange-500 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">CSS<FaCss3Alt className="text-blue-600 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[9px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">JavaScript<SiJavascript className="text-yellow-400 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">React<FaReact className="text-blue-400 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Next.JS<SiNextdotjs className="text-black text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">PHP<FaPhp className="text-indigo-500 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[9px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Photoshop<SiAdobephotoshop className="text-blue-500 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Premiere Pro<SiAdobepremierepro className="text-indigo-500 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Canva<SiCanva className="text-blue-300 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">Figma<SiFigma className="text-black text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[9px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">WordPress<FaWordpress className="text-blue-800 text-3xl md:text-5xl pt-2" /></span>
+                    <span className="text-[10px] md:text-xl text-center flex flex-col justify-center items-center rounded-2xl border-2 border-black bg-gray-400 w-full h-[100px]">WebFlow<SiWebflow className="text-blue-500 text-3xl md:text-5xl pt-2" /></span>
                   </div>
                 </div>
               </div>
